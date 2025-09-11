@@ -71,8 +71,3 @@ author_profile: true
   - 공휴일 API 활용 일정 및 대금 입력  
 - <a href="https://github.com/freestyle-y/final_project_b2b.git">GitHub</a>
 
----
-
-# 연락처
-- GitHub: [nohminhyeok](https://github.com/nohminhyeok)  
-- Notion: [학습정리 노션](https://www.notion.so/Dev-Docs-2534f8a9065c8043b6baf42fd9f45e69?source=copy_link)  

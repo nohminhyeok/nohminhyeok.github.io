@@ -24,10 +24,14 @@ repository               : "academicpages/academicpages.github.io"
 author:
   avatar           : "bio-photo.jpg"
   name             : "노민혁"
-  bio              : "백엔드 개발자를 목표로 학습하고 있는 노민혁입니다."
+  bio: |
+    백엔드 개발자를 목표로 학습하고 있는
+    노민혁 입니다.
   location         : "서울특별시 관악구"
   employer         : "구디아카데미 91기"
-  email            : "kygh1488@naver.com"
+  email            : kygh1488@naver.com
+  github           : "https://github.com/nohminhyeok"
+  instagram        : "https://instagram.com/m__hyeok2"
 
   # Academic websites
   academia         : # URL
@@ -43,7 +47,6 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "https://github.com/nohminhyeok"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -54,7 +57,6 @@ author:
   goodreads        : # Username
   google_plus      : # Username
   keybase          : # Username
-  instagram        : "https://instagram.com/m__hyeok2"
   lastfm           : # Username
   linkedin         : # Username
   mastodon         : # URL

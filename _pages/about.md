@@ -14,24 +14,6 @@ redirect_from:
 
 ---
 
-# 주요 프로젝트
-
-### 📌 LMS 시스템 (2025.06.09 ~ 2025.06.25)
-- 역할: 관리자 관련 페이지 구현  
-- 주요 구현:
-  - 강의 관리, 학생 관리, 출석 통계/현황표  
-- <a href="https://github.com/semi-lms/lms.git">GitHub</a>
-
-### 📌 B2B 무역 구매·배송 서비스 (2025.07.25 ~ 2025.09.09)
-- 역할: 주문·결제 / 견적서 계약서 작성 담당
-- 주요 구현:
-  - 구매, 결제(카카오페이 API, 주소 API)  
-  - 주문 조회, 견적서, 계약(전자서명·PDF 기능)  
-  - 공휴일 API 활용 일정/대금 입력 기능
-- <a href="https://github.com/freestyle-y/final_project_b2b.git">GitHub</a>
-
----
-
 # 기술 스택
 - **Backend**: Java, Spring Boot, MyBatis, JPA  
 - **Database**: MySQL, Oracle  
@@ -43,10 +25,28 @@ redirect_from:
 # 이력 요약
 - 구디아카데미 클라우드(AWS) 활용 자바/스프링 부트 부트캠프 (2025)  
 - 육군 의무부사관(중사, 7년 복무)  
-- ㈜ 프로에스콤 보안팀 사원 (2024.10 ~ 2025.02)  
+- 프로에스콤 보안팀 사원 (2024.10 ~ 2025.02)  
 - SQLD 자격증 보유 
 - 실용수학자격 3급
-- e-test Professionals
+- E-Test Professionals
+
+---
+
+# 주요 프로젝트
+
+### 학원용 LMS 시스템 (2025.06.09 ~ 2025.06.25)
+- 역할: 관리자 관련 페이지 구현  
+- 주요 구현:
+  - 강의 관리, 학생 관리, 출석 통계/현황표  
+- <a href="https://github.com/semi-lms/lms.git">GitHub</a>
+
+### B2B 무역 구매·배송 서비스 (2025.07.25 ~ 2025.09.09)
+- 역할: 주문·결제 / 견적서 계약서 작성 담당
+- 주요 구현:
+  - 구매, 결제(카카오페이 API, 주소 API)  
+  - 주문 조회, 견적서, 계약(전자서명·PDF 기능)  
+  - 공휴일 API 활용 일정/대금 입력 기능
+- <a href="https://github.com/freestyle-y/final_project_b2b.git">GitHub</a>
 
 ---
 

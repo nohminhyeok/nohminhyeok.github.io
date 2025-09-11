@@ -7,7 +7,7 @@
 # NOTE that only one of the CV options should be selected, the first is for the
 #      Markdown formatted page while the second is generated using JSON.
 main:
-  - title: "Home"
+  - title: "포트폴리오"
     url: /
 
   - title: "자기소개서"
