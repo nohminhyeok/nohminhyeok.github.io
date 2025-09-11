@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "노민혁 포트폴리오"
+title: ""
 author_profile: true
 redirect_from: 
   - /about/
@@ -49,7 +49,8 @@ redirect_from:
 - 육군 의무부사관(중사, 7년 복무)  
 - ㈜ 프로에스콤 보안팀 사원 (2024.10 ~ 2025.02)  
 - SQLD 자격증 보유 
-
+- 실용수학자격 3급
+- E-Test Professionals
 ---
 
 # 더 알아보기
