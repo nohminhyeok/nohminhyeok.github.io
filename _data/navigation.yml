@@ -7,15 +7,19 @@
 # NOTE that only one of the CV options should be selected, the first is for the
 #      Markdown formatted page while the second is generated using JSON.
 main:
-  - title: "포트폴리오"
+  - title: "메인"
     url: /
 
-  - title: "자기소개서"
+  - title: "이력서"
     url: /cv/
+
+  - title: "포트폴리오"
+    url: /portfolio/
 
   - title: "GitHub"
     url: https://github.com/nohminhyeok
 
   - title: "Notion"
     url: https://www.notion.so/Dev-Docs-2534f8a9065c8043b6baf42fd9f45e69
+
 
