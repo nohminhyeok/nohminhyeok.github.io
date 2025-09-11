@@ -21,15 +21,8 @@ redirect_from:
   - 계약서/견적서 PDF 생성 및 전자서명 구현  
   - 관리자용 DataTables 기반 UI 커스터마이징
 
-- **쇼핑몰 세미 프로젝트**  
+- **학원용 LMS 세미 프로젝트**  
   Spring Boot + JSP + MySQL 기반  
-  - 장바구니, 주문, 리뷰 작성 기능 구현  
-  - RESTful 구조 설계 및 서비스 레이어 분리  
-
-- **개인 블로그**  
-  React + Shadcn UI 기반  
-  - 블로그 CRUD 및 다크모드 지원  
-  - GitHub Pages + Vercel 배포
 
 ---
 
@@ -48,9 +41,9 @@ redirect_from:
 
 ---
 
-# 블로그
-개발 과정에서 배운 내용들을 정리하고 공유합니다.  
-👉 [Blog Posts](/blog/)
+# Notion
+개발 과정에서 배운 내용들을 정리합니다.
+👉 [Notion Posts](/https://www.notion.so/Dev-Docs-2534f8a9065c8043b6baf42fd9f45e69?source=copy_link/)
 
 ---
 
