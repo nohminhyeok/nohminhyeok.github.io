@@ -30,11 +30,6 @@ redirect_from:
   - 공휴일 API 활용 일정/대금 입력 기능
 - <a href="https://github.com/freestyle-y/final_project_b2b.git">GitHub</a>
 
-### 📌 개인 블로그
-- React + Shadcn UI 기반 블로그 개발  
-- CRUD + 다크모드 지원  
-- Vercel 배포
-
 ---
 
 # 기술 스택
@@ -52,9 +47,9 @@ redirect_from:
 - SQLD 자격증 보유 
 - 실용수학자격 3급
 - e-test Professionals
+
 ---
 
 # 더 알아보기
-👉 [이력서 상세 보기](/cv/)  
-👉 [개발 블로그](/blog/)  
-👉 [Notion Posts](https://www.notion.so/Dev-Docs-2534f8a9065c8043b6baf42fd9f45e69?source=copy_link)
+[이력서 상세 보기](/cv/)  
+[Notion Posts](https://www.notion.so/Dev-Docs-2534f8a9065c8043b6baf42fd9f45e69?source=copy_link)

@@ -56,18 +56,18 @@ author_profile: true
 
 # 프로젝트 경험
 ## 📌 LMS 제작 (2025.06.09 ~ 2025.06.25)
-- <a href="https://github.com/semi-lms/lms.git">GitHub</a>
 - 주요 역할:
   - 관리자 화면 및 데이터 연동  
   - 강의 관리, 학생 관리, 출석 통계 및 현황표  
+- <a href="https://github.com/semi-lms/lms.git">GitHub</a>
 
 ## 📌 B2B 무역 구매·배송 서비스 (2025.07.25 ~ 2025.09.09)
-- <a href="https://github.com/freestyle-y/final_project_b2b.git">GitHub</a>
 - 주요 역할:
   - 주문 페이지 및 기능 개발  
   - 결제(카카오페이 API, 카카오 주소 API)  
   - 주문 조회, 견적서, 계약(전자서명·PDF)  
   - 공휴일 API 활용 일정 및 대금 입력  
+- <a href="https://github.com/freestyle-y/final_project_b2b.git">GitHub</a>
 
 ---
 
