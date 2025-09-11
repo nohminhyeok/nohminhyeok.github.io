@@ -22,24 +22,23 @@ repository               : "academicpages/academicpages.github.io"
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
-  # Biographic information
-  avatar           : "itsme.png"
+  avatar           : "itsme.jpg"
   name             : "노민혁"
-  pronouns         : # example: "she/her"  
   bio              : "백엔드 개발자를 목표로 학습하고 있는 노민혁입니다."
-  
   location         : "서울특별시 관악구"
   employer         : "구디아카데미 91기"
-  uri              : # URL
   email            : "kygh1488@naver.com" 
+  github           : "https://github.com/nohminhyeok"
+  instagram        : "https://instagram.com/minhyeok_75"
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-    inspire-hep      : # URL
+  inspire-hep      : # URL
   impactstory      : # URL
-    semantic         : # URL
-    researchgate     : # URL
+  
+  semantic         : # URL
+  researchgate     : # URL
   scopus           : # URL
 
   # Repositories and software development
@@ -51,14 +50,14 @@ author:
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  artstation       : # Username
-    facebook         : # Username
+  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
   goodreads        : # Username
   google_plus      : # Username
   keybase          : # Username
-  instagram        : # Username
+  instagram        : "minhyeok_75"
   lastfm           : # Username
   linkedin         : # Username
   mastodon         : # URL
