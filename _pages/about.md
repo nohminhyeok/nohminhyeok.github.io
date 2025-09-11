@@ -1,61 +1,57 @@
 ---
 permalink: /
 title: ""
-layout: single           # (수정) 깔끔한 단일 페이지 레이아웃
+layout: single
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
 
-# 소개
-안녕하세요!  
-저는 **백엔드 개발자**를 목표로 학습하고 있는 노민혁입니다.  
-이 사이트는 제가 진행한 프로젝트, 학습 기록, 이력서를 정리하여 보여주기 위해 제작되었습니다.
+# 안녕하세요, 노민혁입니다
+**백엔드 개발자 지망생**으로서 안정적인 트랜잭션, 명확한 데이터 모델링, 그리고 “끝까지 파는” 문제 해결을 지향합니다.  
+아래에서 제가 잘하는 것과 실제로 해결한 사례를 빠르게 보실 수 있습니다.
+
+<div class="btns">
+  <a class="btn btn--primary" href="/portfolio/">포트폴리오 보기</a>
+  <a class="btn" href="/cv/">이력서 보기</a>
+  <a class="btn" href="https://github.com/freestyle-y" target="_blank" rel="noopener">GitHub</a>
+  <a class="btn" href="https://www.notion.so/Dev-Docs-2534f8a9065c8043b6baf42fd9f45e69" target="_blank" rel="noopener">Notion</a>
+</div>
 
 ---
 
-# 기술 스택
+## 무엇을 잘하나요
+- **결제·주문 흐름 설계**: 카카오페이 연동, 주문/결제/적립금/배송지 저장 트랜잭션 정리
+- **데이터 모델링 & SQL**: MySQL ERD 설계, 다중 JOIN, Grouping, 성능을 해치지 않는 집계 쿼리
+- **문서화/운영 관점**: 에러 원인 추적(로그/SQL), 재발 방지 체크리스트화
+- **프런트 협업 포인트**: JSP·DataTables·간단한 React, 관리자 화면 구성과 UX 다듬기
+
+---
+
+## 문제 해결 로그 (요약 사례)
+> 실제 프로젝트에서 **무엇을**, **왜**, **어떻게** 고쳤는지 중심으로 정리했습니다.
+
+### 1) 카카오페이 결제 준비→승인 흐름 안정화
+- **문제**: 주문정보 저장, 포인트 차감, 결제창 리다이렉트 사이의 순서/예외 처리 혼선  
+- **접근**: 컨트롤러→서비스 역할 분리, 주문/결제 레코드 선저장 → 카카오 `ready` 호출 → 승인 시 상태 업데이트  
+- **결과**: 실패 시 롤백 지점 명확화, 중복 결제/잘못된 금액 승인 방지
+
+### 2) 전자서명(Data URL) 저장 & 계약서 PDF 반영
+- **문제**: 서명 캔버스 이미지가 상세/다운로드본에서 서로 다르게 보임  
+- **접근**: Base64 디코드→파일 저장→`Attachment` 엔티티로 메타 관리, 우선순위별(공급자/수요자) 표시 통일  
+- **결과**: 화면·PDF 동일 렌더링, 파일 경로/접근 권한 일원화
+
+### 3) DataTables 멀티 헤더/정렬·검색 UX
+- **문제**: 헤더 그룹과 정렬 기준 불일치, 드롭다운이 인쇄 레이어에 가려짐  
+- **접근**: 고정 폭/열 그룹 CSS 재정의, z-index/print 전용 스타일 분리  
+- **결과**: 관리자 목록 가독성↑, 인쇄/화면 UI 충돌 제거
+
+---
+
+## 기술 스택
 - **Backend**: Java, Spring Boot, MyBatis, JPA  
-- **Database**: MySQL, Oracle  
-- **Frontend**: JavaScript, React, JSP  
+- **DB**: MySQL, Oracle  
+- **Frontend**: JavaScript, JSP, React(기초)  
 - **Infra/Tools**: AWS, GitHub Actions, Docker, Eclipse, IntelliJ
 
----
-
-# 이력 요약
-- 구디아카데미 클라우드(AWS) 활용 자바/스프링 부트 부트캠프 (2025)  
-- 육군 의무부사관(중사, 7년 복무)  
-- 프로에스콤 보안팀 사원 (2024.10 ~ 2025.02)  
-- SQLD 자격증 보유  
-- 실용수학자격 3급  
-- E-Test Professionals
-
----
-
-# 주요 프로젝트
-
-### 학원용 LMS 시스템 (2025.06.09 ~ 2025.06.25)
-- 역할: 관리자 관련 페이지 구현  
-- 주요 구현:
-  - 강의 관리
-  - 학생 관리
-  - 관리자 화면 및 데이터 연동
-  - 출석 통계 및 출석 현황표
-- <a href="https://github.com/semi-lms/lms.git" target="_blank" rel="noopener">GitHub</a>
-
-### B2B 무역 구매·배송 서비스 (2025.07.25 ~ 2025.09.09)
-- 역할: 주문·결제 / 견적서 계약서 작성 담당
-- 주요 구현:
-  - 결제 관련(카카오페이 API, 주소 API)  
-  - 주문 조회 상세
-  - 견적서
-  - 계약(전자서명·PDF 기능)  
-  - 공휴일 API 활용 일정/대금 입력 기능
-- <a href="https://github.com/freestyle-y/final_project_b2b.git" target="_blank" rel="noopener">GitHub</a>
-
----
-
-# 더 알아보기
-[이력서 상세 보기](/cv/)  
-[Notion Posts](https://www.notion.so/Dev-Docs-2534f8a9065c8043b6baf42fd9f45e69?source=copy_link)
