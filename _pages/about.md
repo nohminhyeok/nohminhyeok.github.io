@@ -7,10 +7,11 @@ redirect_from:
   - /about.html
 ---
 
+
 # 소개
 안녕하세요 👋  
 저는 **백엔드 개발자**를 목표로 학습하고 있는 노민혁입니다.  
-이 사이트는 저의 프로젝트, 기술 블로그, 이력서 등을 정리하기 위해 제작되었습니다.
+이 사이트는 저의 프로젝트, 기술 Notion, 이력서 등을 정리하기 위해 제작되었습니다.
 
 ---
 
@@ -43,7 +44,7 @@ redirect_from:
 
 # Notion
 개발 과정에서 배운 내용들을 정리합니다.
-👉 [Notion Posts](/https://www.notion.so/Dev-Docs-2534f8a9065c8043b6baf42fd9f45e69?source=copy_link/)
+👉 [Notion Posts] <a href="https://www.notion.so/Dev-Docs-2534f8a9065c8043b6baf42fd9f45e69?source=copy_link" target="_blank">Notion Posts</a>
 
 ---
 
