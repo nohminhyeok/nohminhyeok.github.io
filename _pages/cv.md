@@ -67,16 +67,6 @@ classes: wide
   </ul>
 </div>
 
-<h2>기술 역량</h2>
-<div class="cv-card">
-  <ul class="chips">
-    <li><span class="chip">Java</span><em>팀 프로젝트 백엔드 핵심 로직 구현 (상)</em></li>
-    <li><span class="chip">Spring Boot</span><em>REST API, 게시판·결제 모듈 (상)</em></li>
-    <li><span class="chip">MyBatis</span><em>SQL 매퍼, 다중 JOIN (상)</em></li>
-    <li><span class="chip">MySQL</span><em>DB 설계, ERD (상)</em></li>
-  </ul>
-</div>
-
 <h2>자격증</h2>
 <div class="cv-card">
   <ul class="list">
@@ -86,11 +76,22 @@ classes: wide
   </ul>
 </div>
 
+
 <h2>프로젝트</h2>
 <div class="cv-card">
   <ul class="links">
     <li><a href="/portfolio/lms/">학원용 LMS 시스템</a></li>
     <li><a href="/portfolio/b2b/">B2B 무역 구매·배송 서비스</a></li>
+  </ul>
+</div>
+
+<h2>기술 역량</h2>
+<div class="cv-card">
+  <ul class="chips">
+    <li><span class="chip">Java</span><em>팀 프로젝트 백엔드 핵심 로직 구현 (상)</em></li>
+    <li><span class="chip">Spring Boot</span><em>REST API, 게시판·결제 모듈 (상)</em></li>
+    <li><span class="chip">MyBatis</span><em>SQL 매퍼, 다중 JOIN (상)</em></li>
+    <li><span class="chip">MySQL</span><em>DB 설계, ERD (상)</em></li>
   </ul>
 </div>
 
