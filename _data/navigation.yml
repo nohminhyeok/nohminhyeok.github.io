@@ -10,11 +10,12 @@ main:
   - title: "Home"
     url: /
 
-  - title: "Notion"
-    url: https://www.notion.so/Dev-Docs-2534f8a9065c8043b6baf42fd9f45e69
-
   - title: "CV"
     url: /cv/
 
   - title: "GitHub"
     url: https://github.com/nohminhyeok
+
+  - title: "Notion"
+    url: https://www.notion.so/Dev-Docs-2534f8a9065c8043b6baf42fd9f45e69
+

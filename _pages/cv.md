@@ -1,6 +1,6 @@
 ---
 permalink: /cv/
-title: "Curriculum Vitae"
+title: "이력서"
 author_profile: true
 ---
 
