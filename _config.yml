@@ -24,12 +24,11 @@ repository               : "academicpages/academicpages.github.io"
 author:
   avatar           : "bio-photo.jpg"
   name             : "노민혁"
-  bio: |
-    백엔드 개발자를 목표로 학습하고 있는
-    노민혁 입니다.
+  bio: "백엔드 개발자를 목표로 학습하고 있는  
+  노민혁 입니다."
   location         : "서울특별시 관악구"
   employer         : "구디아카데미 91기"
-  email            : kygh1488@naver.com
+  email            : "kygh1488@naver.com"
   github           : "https://github.com/nohminhyeok"
   instagram        : "https://instagram.com/m__hyeok2"
 
