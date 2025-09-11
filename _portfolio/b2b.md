@@ -56,10 +56,6 @@ thumb: /images/final.png
 <p><strong>② FK 제약으로 컨테이너 삭제 실패</strong><br>
 접근: 배송 존재 시 논리삭제, 참조 없을 때만 물리삭제 허용<br>
 결과: 무결성 보존</p>
-
-<p><strong>④ use_status 모호성</strong><br>
-접근: 모든 컬럼 완전수식, Mapper where절 정리<br>
-결과: 쿼리 안정성 개선</p>
 </div>
 
 ## 산출물

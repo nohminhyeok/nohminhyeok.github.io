@@ -58,17 +58,6 @@ classes: wide
 </section>
 
 <section>
-  <h2>기술 스택</h2>
-  <ul class="stack">
-    <li>Java</li><li>Spring Boot</li><li>MyBatis</li><li>JPA</li>
-    <li>MySQL</li><li>Oracle</li>
-    <li>JavaScript</li><li>JSP</li><li>React(기초)</li>
-    <li>AWS</li><li>GitHub Actions</li><li>Docker</li>
-    <li>Eclipse</li><li>IntelliJ</li>
-  </ul>
-</section>
-
-<section>
   <h2>대표 프로젝트</h2>
   <div class="proj-grid">
     <article class="card proj-card">
@@ -125,6 +114,16 @@ classes: wide
 </section>
 
 </div><!-- /.home-wrap -->
+<section>
+  <h2>기술 스택</h2>
+  <ul class="stack">
+    <li>Java</li><li>Spring Boot</li><li>MyBatis</li><li>JPA</li>
+    <li>MySQL</li><li>Oracle</li>
+    <li>JavaScript</li><li>JSP</li><li>React(기초)</li>
+    <li>AWS</li><li>GitHub Actions</li><li>Docker</li>
+    <li>Eclipse</li><li>IntelliJ</li>
+  </ul>
+</section>
 
 <style>
 /* ===== Home local styles (라이트/다크 상위 팔레트 상속) ===== */
