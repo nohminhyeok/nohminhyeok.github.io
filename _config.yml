@@ -27,10 +27,7 @@ author:
   bio			   : "신입 백엔드 개발자"
   location         : "서울특별시 관악구"
   employer         : "구디아카데미 91기"
-  links:
-    - label: "kygh1488@naver.com"    # ← 아이콘 옆에 이메일 주소 뜸
-      icon : "fas fa-fw fa-envelope"
-      url  : "mailto:kygh1488@naver.com"
+  email   		   : "kygh1488@naver.com"
   github           : "https://github.com/nohminhyeok"
   instagram        : "https://instagram.com/m__hyeok2"
 
