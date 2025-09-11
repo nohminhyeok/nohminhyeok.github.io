@@ -27,16 +27,24 @@ author:
   bio			   : "신입 백엔드 개발자"
   location         : "서울특별시 관악구"
   employer         : "구디아카데미 91기"
-  email   		   : "kygh1488@naver.com"
-  github           : "https://github.com/nohminhyeok"
-  instagram        : "https://instagram.com/m__hyeok2"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/nohminhyeok"
+
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/m__hyeok2"
+
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:kygh1488@naver.com"
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
   inspire-hep      : # URL
   impactstory      : # URL
-  github           : "https://github.com/nohminhyeok"
   semantic         : # URL
   researchgate     : # URL
   scopus           : # URL
@@ -55,7 +63,6 @@ author:
   goodreads        : # Username
   google_plus      : # Username
   keybase          : # Username
-  instagram        : "https://instagram.com/m__hyeok2"
   lastfm           : # Username
   linkedin         : # Username
   mastodon         : # URL
