@@ -57,10 +57,6 @@ thumb: /images/final.png
 접근: 배송 존재 시 논리삭제, 참조 없을 때만 물리삭제 허용<br>
 결과: 무결성 보존</p>
 
-<p><strong>③ 포인트 사용액 3배 차감</strong><br>
-접근: reward_history 집계 후 조인, 서브쿼리로 단일 스칼라 추출<br>
-결과: 실제 사용액과 일치</p>
-
 <p><strong>④ use_status 모호성</strong><br>
 접근: 모든 컬럼 완전수식, Mapper where절 정리<br>
 결과: 쿼리 안정성 개선</p>
