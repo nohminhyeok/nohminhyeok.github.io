@@ -1,64 +1,77 @@
 ---
-layout: archive
-title: "CV"
 permalink: /cv/
+title: "Curriculum Vitae"
 author_profile: true
-redirect_from:
-  - /resume
 ---
 
-{% include base_path %}
+# 기본정보
+- 이름: 노민혁 (Noh Min Hyeok)
+- 출생: 1997년생
+- 지원분야: 백엔드 개발 (신입)
+- 휴대폰: 010-9873-1878
+- 이메일: kygh1488@naver.com
+- 주소: 서울특별시 관악구 신림로 56길 19-10 행복이꽃피는집 203호
+- 포트폴리오: 학습정리 노션, GitHub
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+---
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+# 학력
+- **대전보건대학교** 의무부사관과 전문학사 (2015.03 ~ 2017.02)  
+  학점: 3.5 / 4.5  
+- **고창고등학교** 졸업 (2012.03 ~ 2015.02)
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+---
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+# 경력
+- **육군 제3군단 의무반 중사** (2017.06 ~ 2024.05)  
+  - 인사·행정·환자 관리, 부대 운영지원  
+- **㈜ 프로에스콤 보안팀 사원** (2024.10 ~ 2025.02)  
+  - 시설 보안·안전 관리  
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+---
+
+# 교육/연수
+- 구디아카데미 클라우드(AWS) 활용 자바/스프링 부트캠프 (2025.03.04 ~ 2025.09.12)
+
+---
+
+# 자격증
+- SQL 개발자(SQLD), 한국데이터산업진흥원 (2025.06)  
+- 실용수학자격 3급, 한국창의인성교육연구원 (2016.06)  
+- E-Test Professionals, 한국창의인성교육연구원 (2016.08)
+
+---
+
+# 병역
+- 육군 의무부사관 / 중사 (2017.06.01 ~ 2024.05.31)
+
+---
+
+# 기술 역량
+- **Java**: 팀 프로젝트 백엔드 핵심 로직 구현 (상)  
+- **Spring Boot**: REST API 개발, 게시판·결제 모듈 구현 (상)  
+- **MyBatis**: SQL 매퍼 작성, 다중 테이블 JOIN (상)  
+- **MySQL**: DB 설계 및 구축, ERD 작성 (상)
+
+---
+
+# 프로젝트 경험
+## 📌 LMS 제작 (2025.06.09 ~ 2025.06.25)
+- GitHub: (추가 예정)  
+- 주요 역할:
+  - 관리자 화면 및 데이터 연동  
+  - 강의 관리, 학생 관리, 출석 통계 및 현황표  
+
+## 📌 B2B 무역 구매·배송 서비스 (2025.07.25 ~ 2025.09.09)
+- GitHub: (추가 예정)  
+- 주요 역할:
+  - 주문 페이지 및 기능 개발  
+  - 결제(카카오페이 API, 카카오 주소 API)  
+  - 주문 조회, 견적서, 계약(전자서명·PDF)  
+  - 공휴일 API 활용 일정 및 대금 입력  
+
+---
+
+# 연락처
+- GitHub: [nohminhyeok](https://github.com/nohminhyeok)  
+- Notion: [학습정리 노션](https://www.notion.so/Dev-Docs-2534f8a9065c8043b6baf42fd9f45e69?source=copy_link)  

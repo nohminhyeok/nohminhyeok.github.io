@@ -7,23 +7,32 @@ redirect_from:
   - /about.html
 ---
 
-
 # 소개
 안녕하세요 👋  
 저는 **백엔드 개발자**를 목표로 학습하고 있는 노민혁입니다.  
-이 사이트는 저의 프로젝트, 기술 Notion, 이력서 등을 정리하기 위해 제작되었습니다.
+이 사이트는 제가 진행한 프로젝트, 학습 기록, 이력서를 정리하여 보여주기 위해 제작되었습니다.
 
 ---
 
-# 프로젝트
-- **B2B 무역 서비스 플랫폼 (파이널 프로젝트)**  
-  Spring Boot + MyBatis + MySQL 기반, AWS 인프라 활용  
-  - 주문/결제/카카오페이 API 연동 담당  
-  - 계약서/견적서 PDF 생성 및 전자서명 구현  
-  - 관리자용 DataTables 기반 UI 커스터마이징
+# 주요 프로젝트
+### 📌 B2B 무역 구매·배송 서비스 (2025.07.25 ~ 2025.09.09)
+- 역할: 주문/결제 파트 담당  
+- 주요 구현:
+  - 구매, 결제(카카오페이 API, 주소 API)  
+  - 주문 조회, 견적서, 계약(전자서명·PDF 라이브러리)  
+  - 공휴일 API 활용 일정/대금 입력 기능  
+- GitHub: (추가 예정)
 
-- **학원용 LMS 세미 프로젝트**  
-  Spring Boot + JSP + MySQL 기반  
+### 📌 LMS 시스템 (2025.06.09 ~ 2025.06.25)
+- 역할: 관리자 관련 페이지 구현  
+- 주요 구현:
+  - 강의 관리, 학생 관리, 출석 통계/현황표  
+- GitHub: (추가 예정)
+
+### 📌 개인 블로그
+- React + Shadcn UI 기반 블로그 개발  
+- CRUD + 다크모드 지원  
+- Vercel 배포
 
 ---
 
@@ -35,20 +44,15 @@ redirect_from:
 
 ---
 
-# 이력 및 활동
-- **구디아카데미** 클라우드 활용 자바/스프링 부트 개발자 과정 (2025)  
-- **SQLD 자격증** 보유  
-- **육군 의무부사관** (7년 근무, 중사 전역)  
+# 이력 요약
+- 구디아카데미 클라우드(AWS) 활용 자바/스프링 부트 부트캠프 (2025)  
+- 육군 의무부사관(중사, 7년 복무)  
+- ㈜ 프로에스콤 보안팀 사원 (2024.10 ~ 2025.02)  
+- SQLD 자격증 보유 
 
 ---
 
-# Notion
-개발 과정에서 배운 내용들을 정리합니다.
-👉 [Notion Posts] <a href="https://www.notion.so/Dev-Docs-2534f8a9065c8043b6baf42fd9f45e69?source=copy_link" target="_blank">Notion Posts</a>
-
----
-
-# 연락처
-- Email: kygh1488@naver.com  
-- GitHub: [nohminhyeok](https://github.com/nohminhyeok)  
-- LinkedIn: (추가 예정)  
+# 더 알아보기
+👉 [이력서 상세 보기](/cv/)  
+👉 [개발 블로그](/blog/)  
+👉 [Notion Posts](https://www.notion.so/Dev-Docs-2534f8a9065c8043b6baf42fd9f45e69?source=copy_link)

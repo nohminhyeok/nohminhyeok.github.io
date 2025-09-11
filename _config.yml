@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Noh min hyeok / PORTFOLIO"
+title                    : "노민혁 / PORTFOLIO"
 title_separator          : "-"
 name                     : &name "노민혁"
 description              : &description "백엔드 개발자 포트폴리오"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "노민혁"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "백엔드 개발자를 목표로 학습하고 있는 노민혁입니다."
   location         : "서울특별시 관악구"
   employer         : "구디아카데미 91기"
   uri              : # URL
