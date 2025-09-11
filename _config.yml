@@ -16,7 +16,7 @@ description              : &description "백엔드 개발자 포트폴리오"   
 url                      : https://nohminhyeok.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "nominhyeok/nominhyeok.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -28,11 +28,9 @@ author:
   location         : "서울특별시 관악구"
   employer         : "구디아카데미 91기"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope"
-      url: "mailto:kygh1488@naver.com"
-  icon: "fas fa-fw fa-envelope"
-  url: "mailto:kygh1488@naver.com"
+    - label: "kygh1488@naver.com"    # ← 아이콘 옆에 이메일 주소 뜸
+      icon : "fas fa-fw fa-envelope"
+      url  : "mailto:kygh1488@naver.com"
   github           : "https://github.com/nohminhyeok"
   instagram        : "https://instagram.com/m__hyeok2"
 
@@ -267,7 +265,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comment: true
+      comments: true
   # _talks
   - scope:
       path: ""
@@ -288,7 +286,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
