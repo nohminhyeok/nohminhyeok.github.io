@@ -15,6 +15,13 @@ redirect_from:
 ---
 
 # 주요 프로젝트
+
+### 📌 LMS 시스템 (2025.06.09 ~ 2025.06.25)
+- 역할: 관리자 관련 페이지 구현  
+- 주요 구현:
+  - 강의 관리, 학생 관리, 출석 통계/현황표  
+- <a href="https://github.com/semi-lms/lms.git">GitHub</a>
+
 ### 📌 B2B 무역 구매·배송 서비스 (2025.07.25 ~ 2025.09.09)
 - 역할: 주문·결제 / 견적서 계약서 작성 담당
 - 주요 구현:
@@ -22,12 +29,6 @@ redirect_from:
   - 주문 조회, 견적서, 계약(전자서명·PDF 기능)  
   - 공휴일 API 활용 일정/대금 입력 기능
 - <a href="https://github.com/freestyle-y/final_project_b2b.git">GitHub</a>
-
-### 📌 LMS 시스템 (2025.06.09 ~ 2025.06.25)
-- 역할: 관리자 관련 페이지 구현  
-- 주요 구현:
-  - 강의 관리, 학생 관리, 출석 통계/현황표  
-- <a href="https://github.com/semi-lms/lms.git">GitHub</a>
 
 ### 📌 개인 블로그
 - React + Shadcn UI 기반 블로그 개발  

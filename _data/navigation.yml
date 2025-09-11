@@ -10,7 +10,7 @@ main:
   - title: "Home"
     url: /
 
-  - title: "CV"
+  - title: "자기소개서"
     url: /cv/
 
   - title: "GitHub"
