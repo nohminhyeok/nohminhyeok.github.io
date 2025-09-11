@@ -3,8 +3,10 @@ permalink: /cv/
 title: "이력서"
 author_profile: true
 ---
+<br>
 
 # 기본정보
+
 - 이름: 노민혁 (Noh Min Hyeok)
 - 출생: 1997년생
 - 지원분야: 백엔드 개발 (신입)
