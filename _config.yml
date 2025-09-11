@@ -22,9 +22,9 @@ repository               : "nominhyeok/nominhyeok.github.io"
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
-  avatar           : "bio-photo.jpg"
+  avatar           : "itsme.jpg"
   name             : "노민혁"
-  bio			   : "신입 백엔드 개발자"
+  bio			   : "백엔드 개발자 지망생"
   location         : "서울특별시 관악구"
   employer         : "구디아카데미 91기"
   email   		   : "kygh1488@naver.com"

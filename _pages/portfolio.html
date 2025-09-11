@@ -1,12 +1,241 @@
 ---
-layout: archive
+layout: single
 title: "포트폴리오"
 permalink: /portfolio/
 author_profile: true
+classes: wide
 ---
 
-{% include base_path %}
+<div class="portfolio-wrap">
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
+  <!-- 컨트롤 바 -->
+  <section class="pf-controls card" aria-label="필터와 정렬">
+    <div class="pf-row">
+      <input id="pf-search" class="pf-input" type="search" placeholder="검색: 제목/태그" aria-label="검색" />
+      <select id="pf-sort" class="pf-select" aria-label="정렬">
+        <option value="recent">최신순</option>
+        <option value="title">제목순</option>
+      </select>
+    </div>
+    <div class="pf-chips" id="pf-chips" aria-label="태그 필터"></div>
+  </section>
+
+  <!-- 카드 그리드 -->
+  <section class="pf-grid" id="pf-grid">
+    {% assign posts = site.portfolio | sort: 'date' | reverse %}
+    {% for post in posts %}
+      {% assign tag_csv = post.tags | join: ',' %}
+      <article class="pf-card card"
+               data-title="{{ post.title | downcase }}"
+               data-tags="{{ tag_csv | downcase }}"
+               data-date="{{ post.date | date_to_xmlschema }}">
+        <a class="pf-media" href="{{ post.url | relative_url }}">
+          {% if post.thumb %}
+            <img src="{{ post.thumb | relative_url }}" alt="{{ post.title }}" loading="lazy">
+          {% elsif post.image %}
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
+          {% else %}
+            <div class="pf-placeholder" aria-hidden="true"></div>
+          {% endif %}
+
+          {% if post.video or post.video_url or post.youtube_id %}
+            <span class="pf-badge pf-badge-play" aria-label="Video">▶</span>
+          {% endif %}
+        </a>
+
+        <div class="pf-body">
+          <h3 class="pf-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <div class="pf-meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+            {% if post.tags and post.tags.size > 0 %}
+            <ul class="pf-tags">
+              {% for t in post.tags %}
+                <li>#{{ t }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </div>
+          {% if post.excerpt %}
+            <p class="pf-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+          {% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </section>
+
+  <!-- 하단 상태/초기화 -->
+  <footer class="pf-footer">
+    <div><strong id="pf-count"></strong> 개의 결과</div>
+    <button class="btn pf-clear" type="button" id="pf-clear">필터 초기화</button>
+  </footer>
+
+</div><!-- /.portfolio-wrap -->
+
+<style>
+/* ===== Portfolio page styles (라이트/다크 상위 팔레트 상속) ===== */
+.portfolio-wrap{ color: inherit; }
+
+/* 공통 카드 */
+.card{
+  background: inherit;
+  border:1px solid;
+  border-color: rgba(128,128,128,.25);
+  border-color: color-mix(in oklch, currentColor 18%, transparent);
+  border-radius: 14px;
+  padding: 12px 14px;
+  box-shadow: none;
+}
+
+/* 컨트롤 바 */
+.pf-controls{ margin-bottom: 12px; }
+.pf-row{ display:flex; gap:10px; flex-wrap: wrap; }
+.pf-input,.pf-select{
+  border:1px solid color-mix(in oklch, currentColor 18%, transparent);
+  background: color-mix(in oklch, currentColor 6%, transparent);
+  padding: 8px 10px; border-radius: 12px; outline: none;
+}
+.pf-input{ flex: 1 1 260px; min-width: 220px; }
+.pf-select{ flex: 0 0 140px; }
+
+/* 태그 칩(동적 생성) */
+.pf-chips{ display:flex; flex-wrap:wrap; gap:8px; margin-top: 10px; }
+.pf-chip{
+  border:1px solid color-mix(in oklch, currentColor 30%, transparent);
+  background: color-mix(in oklch, currentColor 8%, transparent);
+  border-radius: 999px; padding: 4px 10px; cursor:pointer; user-select:none;
+  font-weight: 600; font-size: .92rem;
+}
+.pf-chip.active{
+  background: color-mix(in oklch, currentColor 16%, transparent);
+  border-color: color-mix(in oklch, currentColor 45%, transparent);
+}
+
+/* 그리드 */
+.pf-grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(240px,1fr));
+  gap: 14px;
+}
+@media (max-width: 1100px){ .pf-grid{ grid-template-columns: repeat(2, minmax(240px,1fr)); } }
+@media (max-width: 720px){ .pf-grid{ grid-template-columns: 1fr; } }
+
+/* 카드 내부 */
+.pf-card{ display:flex; flex-direction: column; overflow:hidden; }
+.pf-media{ display:block; position:relative; aspect-ratio: 16/9; overflow:hidden; border-radius: 10px; }
+.pf-media img{ width:100%; height:100%; object-fit:cover; display:block; }
+.pf-placeholder{ width:100%; height:100%; background:
+  linear-gradient(135deg, color-mix(in oklch, currentColor 14%, transparent),
+                         color-mix(in oklch, currentColor 6%, transparent)); }
+.pf-badge{
+  position:absolute; right:10px; bottom:10px;
+  background: color-mix(in oklch, currentColor 16%, transparent);
+  border:1px solid color-mix(in oklch, currentColor 35%, transparent);
+  border-radius: 999px; padding: 4px 10px; font-weight:700;
+}
+.pf-body{ margin-top: 10px; }
+.pf-title{ font-size: 1.05rem; margin: 0 0 4px; }
+.pf-title a{ text-decoration: none; border-bottom: 1px solid transparent; }
+.pf-title a:hover{ border-color: color-mix(in oklch, currentColor 35%, transparent); }
+.pf-meta{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; opacity:.85; font-size:.92rem;}
+.pf-tags{ list-style:none; margin:0; padding:0; display:flex; gap:6px; flex-wrap:wrap; }
+.pf-tags li{ opacity:.8; }
+
+.pf-excerpt{ margin: 6px 0 4px; opacity:.95; }
+
+/* 하단 */
+.pf-footer{
+  display:flex; justify-content: space-between; align-items:center;
+  margin-top: 12px; padding: 8px 0;
+}
+.pf-clear{ border-radius: 10px; }
+
+/* 접근성 focus */
+.pf-media:focus-visible, .pf-chip:focus-visible, .pf-clear:focus-visible, .pf-input:focus-visible, .pf-select:focus-visible{
+  outline: 2px solid color-mix(in oklch, currentColor 40%, transparent);
+  outline-offset: 2px;
+}
+</style>
+
+<script>
+/* ===== Portfolio page script: 검색/태그/정렬 ===== */
+(function(){
+  const grid  = document.getElementById('pf-grid');
+  const cards = Array.from(grid.querySelectorAll('.pf-card'));
+  const input = document.getElementById('pf-search');
+  const sort  = document.getElementById('pf-sort');
+  const chipsWrap = document.getElementById('pf-chips');
+  const countEl = document.getElementById('pf-count');
+  const clearBtn = document.getElementById('pf-clear');
+
+  // 1) 태그 칩 자동 생성
+  const tagSet = new Set();
+  cards.forEach(c => (c.dataset.tags || '').split(',').forEach(t=>{
+    t = t.trim(); if(t) tagSet.add(t);
+  }));
+  const chips = [];
+  [...tagSet].sort().forEach(tag=>{
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'pf-chip';
+    b.textContent = `#${tag}`;
+    b.dataset.tag = tag;
+    chipsWrap.appendChild(b);
+    chips.push(b);
+  });
+
+  // 2) 상태
+  const state = { query: '', tags: new Set(), sort: 'recent' };
+
+  // 3) 이벤트
+  input.addEventListener('input', () => { state.query = input.value.trim().toLowerCase(); render(); });
+  sort.addEventListener('change', () => { state.sort = sort.value; render(true); });
+  clearBtn.addEventListener('click', () => {
+    state.query = ''; input.value = '';
+    state.tags.clear(); chips.forEach(c=>c.classList.remove('active'));
+    state.sort = 'recent'; sort.value = 'recent';
+    render(true);
+  });
+  chipsWrap.addEventListener('click', (e)=>{
+    const btn = e.target.closest('.pf-chip'); if(!btn) return;
+    const tag = btn.dataset.tag;
+    if(btn.classList.toggle('active')) state.tags.add(tag); else state.tags.delete(tag);
+    render();
+  });
+
+  // 4) 필터 + 정렬 + 카운트
+  function render(doSort){
+    // 필터
+    let visible = cards.filter(c=>{
+      const title = c.dataset.title || '';
+      const tags  = c.dataset.tags || '';
+      const byQuery = !state.query
+        || title.includes(state.query)
+        || tags.includes(state.query);
+      const byTags = state.tags.size === 0
+        || [...state.tags].every(t => tags.split(',').includes(t));
+      c.style.display = (byQuery && byTags) ? '' : 'none';
+      return (byQuery && byTags);
+    });
+
+    // 정렬
+    if(doSort){
+      visible.sort((a,b)=>{
+        if(state.sort === 'title'){
+          return (a.dataset.title > b.dataset.title) ? 1 : -1;
+        }else{
+          // recent
+          return (new Date(b.dataset.date)) - (new Date(a.dataset.date));
+        }
+      });
+      // DOM 재배치
+      visible.forEach(el => grid.appendChild(el));
+    }
+
+    // 카운트
+    countEl.textContent = visible.length.toString();
+  }
+
+  // 초기 렌더
+  render(true);
+})();
+</script>
