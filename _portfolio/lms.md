@@ -19,21 +19,16 @@ thumb: /images/semi.png
 ## 프로젝트 개요
 <div class="card">
   <p><strong>목표</strong>: 학원 운영자가 강의/학생/출석을 한 곳에서 관리하고, 출석 통계를 빠르게 확인할 수 있는 관리자 화면 제공</p>
-  <p><strong>성과</strong>: 관리자 화면 공통화(검색/정렬/페이징), 출석 통계 집계/시각화, 엑셀 기반 산출물 흐름 정리</p>
+  <p><strong>성과</strong>: 관리자 화면 공통화(검색/정렬/페이징), 출석 통계 집계/시각화</p>
 </div>
 
 ## 담당 역할 & 기여도
 <div class="card">
-- 관리자 기능 구현: 강의/학생 CRUD, 출석 현황표, 통계 화면  
-- 데이터 연동: 출석 집계 쿼리(기간/강의/학생 필터), 페이징·검색(DataTables)  
-- 운영 편의: 엑셀 내보내기, 화면 설계서 반영(컴포넌트 공통화)  
+- 관리자 기능 구현: 강의/학생 CRUD, 출석 현황표, 통계 화면 <br>
+- 데이터 연동: 출석 집계 쿼리(기간/강의/학생 필터), 페이징·검색(DataTables)  <br>
 - 문서화: 요구사항 정리, 테이블 정의서 초안, 회의록/이슈 정리
 </div>
 
-## 시스템 구조
-<div class="card">
-Admin(JSP) ↔ Spring Boot ↔ MyBatis ↔ MySQL
-</div>
 
 ## 데이터 모델(ERD)
 <div class="card">
@@ -50,17 +45,14 @@ Admin(JSP) ↔ Spring Boot ↔ MyBatis ↔ MySQL
 
 ## 문제 해결 사례
 <div class="card">
-<p><strong>① 출석 통계 성능 저하</strong><br>
-접근: attendance 복합 인덱스 추가, 기간 조건 선필터링 → 서브쿼리 축소<br>
-결과: 통계 화면 응답 안정화</p>
+<p><strong>① 월별 출석표에 공휴일 반영하기</strong><br>
+접근: DB에 holidays 테이블 생성 후 1년치 공휴일 입력<br>
+결과: 공휴일 반영은 됐으나 공휴일 API가 있다는 것을 몰랐고,
+ 추후 다른 프로젝트에서 반영하였음</p>
 
-<p><strong>② DataTables 정렬/인쇄 충돌</strong><br>
-접근: z-index, print 전용 CSS 분리, 헤더 고정폭 적용<br>
+<p><strong>② 강사 선택 시 오류</strong><br>
+접근: 강의를 진행하고 있는 강사는 선택이 되지 않아야 하는데 선택되는 오류 발생<br>
 결과: 화면/인쇄 모두 정상 표시</p>
-
-<p><strong>③ 엑셀 내보내기 포맷 통일</strong><br>
-접근: DTO→Export 변환 계층 분리, 공통 포맷터 적용<br>
-결과: 문서 바로 제출 가능</p>
 </div>
 
 ## 산출물

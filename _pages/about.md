@@ -30,32 +30,55 @@ classes: wide
   <h2>문제 해결 로그 (요약 사례)</h2>
 
   <article class="card">
-    <h3>1) 카카오페이 결제 준비→승인 흐름 안정화</h3>
+    <h3>1) 카카오페이 포인트가 실제 결제 금액에 미반영</h3>
     <ul class="bullets">
-      <li><strong>문제</strong>: 주문정보 저장, 포인트 차감, 결제창 리다이렉트 사이의 순서/예외 처리 혼선</li>
-      <li><strong>접근</strong>: 컨트롤러→서비스 역할 분리, 주문/결제 레코드 선저장 → 카카오 <code>ready</code> 호출 → 승인 시 상태 업데이트</li>
-      <li><strong>결과</strong>: 실패 시 롤백 지점 명확화, 중복 결제/잘못된 금액 승인 방지</li>
+      <li><strong>문제</strong>: 카카오페이 결제 시 포인트 사용분이 실제 승인 금액에 반영되지 않음</li>
+      <li><strong>접근</strong>: 적립금 사용 이력 테이블에 <code>kakaoPay_used</code> 컬럼 추가 → 
+        <code>ready</code> 요청 금액 = 총액 − 적립금 − 포인트로 계산, 
+        <code>approve</code> 응답에서 결제 금액 검증 및 적립금, 포인트 적용 확인</li>
+      <li><strong>결과</strong>: 승인 금액 불일치 없이 정상적으로 출력 확인</li>
     </ul>
   </article>
 
   <article class="card">
-    <h3>2) 전자서명(Data URL) 저장 &amp; 계약서 PDF 반영</h3>
+    <h3>2) 월별 출결 현황에 공휴일 반영하기</h3> 
+    <ul class="bullets"> 
+      <li><strong>문제</strong>: 월별 출석표를 제작하는 과정에서 공휴일을 반영해야 함</li> 
+      <li><strong>접근</strong>: 1년 단위(2025년) 공휴일을 DB에 입력하여 공휴일 표시</li> 
+      <li><strong>결과</strong>: 공휴일 API가 있다는 걸 몰랐고, 이 경험으로 인해 다른 프로젝트에서 활용할 수 있었음</li> 
+    </ul> 
+  </article>
+
+  <article class="card">
+    <h3>3) 회원 적립금 계산식의 NULL 처리 오류</h3>
     <ul class="bullets">
-      <li><strong>문제</strong>: 서명 캔버스 이미지가 상세/다운로드본에서 서로 다르게 보임</li>
-      <li><strong>접근</strong>: Base64 디코드→파일 저장→<code>Attachment</code> 엔티티 메타 관리, 우선순위별(공급자/수요자) 표시 통일</li>
-      <li><strong>결과</strong>: 화면·PDF 동일 렌더링, 파일 경로/접근 권한 일원화</li>
+      <li><strong>문제</strong>: 보유 − 사용 계산 시 NULL로 인한 합계 오류</li>
+      <li><strong>접근</strong>: MySQL <code>IFNULL</code>로 NULL → 0 치환, 
+        합계에는 <code>IFNULL(SUM(...), 0)</code> 패턴 적용</li>
+      <li><strong>결과</strong>: 예외 없이 일관된 적립금 표시</li>
     </ul>
   </article>
 
   <article class="card">
-    <h3>3) DataTables 멀티 헤더/정렬·검색 UX</h3>
+    <h3>4) 적립금과 주문 테이블 조인 시 결과물 중복 제거</h3>
     <ul class="bullets">
-      <li><strong>문제</strong>: 헤더 그룹과 정렬 기준 불일치, 드롭다운이 인쇄 레이어에 가려짐</li>
-      <li><strong>접근</strong>: 고정 폭/열 그룹 CSS 재정의, z-index/print 전용 스타일 분리</li>
-      <li><strong>결과</strong>: 관리자 목록 가독성 향상, 인쇄/화면 UI 충돌 제거</li>
+      <li><strong>문제</strong>: 주문 테이블과 적립금 사용 내역을 JOIN 시 결과가 여러개로 나옴</li>
+      <li><strong>접근</strong>: 주문 테이블에 한 주문에 여러개의 행이 존재하여 JOIN시 여러개가 나오는 것을 확인,<br>
+      							적립금 사용 내역에 DISTINCT 식 추가하여 중복된 값 제거</li>
+      <li><strong>결과</strong>: 예외 없이 일관된 적립금 표시</li>
     </ul>
+  </article>
+
+  <article class="card"> 
+  	<h3>5) MyBatis 활용 DB 데이터 입력 오류</h3> 
+  	<ul class="bullets"> 
+  	  <li><strong>문제</strong>: DB에 데이터 입력 시, 외래키 설정으로 인한 오류 발생</li> 
+  	  <li><strong>접근</strong>: 외래키 미설정 후 테스트 진행, 단위테스트 기간에 외래기 설정</li> 
+  	  <li><strong>결과</strong>: 외래키 오류 발생 횟수가 줄어들게 되어 오류 해결 기간이 축소</li> 
+  	</ul> 
   </article>
 </section>
+
 
 <section>
   <h2>대표 프로젝트</h2>
