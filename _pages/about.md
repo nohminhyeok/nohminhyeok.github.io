@@ -121,6 +121,7 @@ classes: wide
     </li>
     <li class="badge card">
       <div class="b-title">구디아카데미 9기</div>
+      <a href="/assets/kakaotalk.jpg">수료증</a>
       <div class="b-sub">AWS·Java·Spring Boot · 2025.03~09</div>
     </li>
   </ul>
