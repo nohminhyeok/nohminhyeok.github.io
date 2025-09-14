@@ -43,7 +43,8 @@ classes: wide
 <div class="cv-card">
   <div class="row">
     <strong>구디아카데미</strong> 클라우드(AWS) 활용 자바/스프링 부트캠프
-    <span class="period">2025.03.04 ~ 2025.09.12</span>
+    <span class="period">2025.03.04 ~ 2025.09.12</span><br>
+    <a href="/assets/docs/수료증.jpg">수료증</a>
   </div>
 </div>
 
@@ -88,10 +89,10 @@ classes: wide
 <h2>기술 역량</h2>
 <div class="cv-card">
   <ul class="chips">
-    <li><span class="chip">Java</span><em>팀 프로젝트 백엔드 핵심 로직 구현 (상)</em></li>
-    <li><span class="chip">Spring Boot</span><em>REST API, 게시판·결제 모듈 (상)</em></li>
-    <li><span class="chip">MyBatis</span><em>SQL 매퍼, 다중 JOIN (상)</em></li>
-    <li><span class="chip">MySQL</span><em>DB 설계, ERD (상)</em></li>
+    <li><span class="chip">Java</span><em>팀 프로젝트 백엔드 핵심 로직 구현</em></li>
+    <li><span class="chip">Spring Boot</span><em>REST API, 게시판·결제 모듈</em></li>
+    <li><span class="chip">MyBatis</span><em>SQL 매퍼, 다중 JOIN</em></li>
+    <li><span class="chip">MySQL</span><em>DB 설계, ERD</em></li>
   </ul>
 </div>
 
