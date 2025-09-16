@@ -14,6 +14,9 @@ thumb: /images/semi.png
   <p><strong>GitHub</strong>:
     <a href="https://github.com/semi-lms/lms.git" target="_blank" rel="noopener">LMS</a>
   </p>
+    <p><strong>사이트</strong>:
+    <a href="http://3.37.37.185:8082/" target="_blank" rel="noopener">실행 주소</a>
+  </p>
 </section>
 
 ## 프로젝트 개요
