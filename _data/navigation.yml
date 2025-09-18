@@ -16,6 +16,9 @@ main:
   - title: "포트폴리오"
     url: /portfolio/
 
+  - title: "자기소개서"
+    url: /introduce/
+
   - title: "GitHub"
     url: https://github.com/nohminhyeok
 
