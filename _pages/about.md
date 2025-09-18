@@ -118,22 +118,21 @@ classes: wide
     <li class="badge card">
       <div class="b-title">SQLD</div>
       <div class="b-sub">한국데이터산업진흥원 · 2025.06</div>
+      <a href="/assets/docs/합격증.png">합격증</a>
     </li>
     <li class="badge card">
       <div class="b-title">구디아카데미 9기</div>
-      <a href="/assets/docs/수료증.jpg">수료증</a>
       <div class="b-sub">AWS·Java·Spring Boot · 2025.03~09</div>
+      <a href="/assets/docs/수료증.jpg">수료증</a>
     </li>
   </ul>
 </section>
 
 <section class="card cta">
-  <h2>함께 일할 준비가 되어 있습니다</h2>
-  <p>안정적인 트랜잭션과 깔끔한 SQL/모델링을 강점으로 합니다. 필요 시 바로 코드/ERD/로그를 근거로 설명드리겠습니다.</p>
+  <h2>처음엔 빠르게 배우고, 곧바로 보태겠습니다</h2>
+  <p>작은 일부터 정확히 끝내 팀의 신뢰를 쌓겠습니다. 합의는 짧게, 실행은 빠르게, 기록은 남기겠습니다. 막히면 먼저 공유하고, 배운 건 내일의 개선으로 연결하겠습니다. 함께 일하면 편해지는 신입이 되겠습니다.</p>
   <div class="btns">
     <a class="btn btn--primary" href="/cv/">이력서 보기</a>
-    <a class="btn" href="mailto:kygh1488@naver.com" rel="noopener">메일 보내기</a>
-    <a class="btn" href="https://github.com/freestyle-y" target="_blank" rel="noopener">GitHub</a>
   </div>
 </section>
 
@@ -144,7 +143,7 @@ classes: wide
     <li>Java</li><li>Spring Boot</li><li>MyBatis</li><li>JPA</li>
     <li>MySQL</li><li>Oracle</li>
     <li>JavaScript</li><li>JSP</li><li>React(기초)</li>
-    <li>AWS</li><li>GitHub Actions</li><li>Docker</li>
+    <li>AWS</li><li>GitHub Actions</li>
     <li>Eclipse</li><li>IntelliJ</li>
   </ul>
 </section>
