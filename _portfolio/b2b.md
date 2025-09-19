@@ -17,12 +17,6 @@ thumb: /images/final.png
   <p><strong>사이트</strong>:
     <a href="http://3.37.37.185/" target="_blank" rel="noopener">실행 주소</a>
   </p>
-  
-  <p>
-  	<strong>수정중</strong><br>
-  	1. 메인페이지 페이징 제거, 상품 추가(완료)<br>
-  	2. 네이버, 카카오 로그인 properties 수정(완료)
-  </p>
 </section>
 
 ## 프로젝트 개요
