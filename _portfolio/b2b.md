@@ -20,9 +20,8 @@ thumb: /images/final.png
   
   <p>
   	<strong>수정중</strong><br>
-  	1. 메인페이지 페이징 제거, 상품 추가<br>
-  	2. 스크립트로 페이징 한 jsp 수정<br>
-  	3. 네이버, 카카오 로그인 properties 수정
+  	1. 메인페이지 페이징 제거, 상품 추가(완료)<br>
+  	2. 네이버, 카카오 로그인 properties 수정(완료)
   </p>
 </section>
 
