@@ -89,7 +89,7 @@ classes: wide
 <h2>기술 역량</h2>
 <div class="cv-card">
   <ul class="chips">
-    <li><span class="chip">Java</span><em>팀 프로젝트 백엔드 핵심 로직 구현</em></li>
+    <li><span class="chip">Java</span><em>팀 프로젝트 백엔드 로직 구현</em></li>
     <li><span class="chip">Spring Boot</span><em>REST API, 게시판·결제 모듈</em></li>
     <li><span class="chip">MyBatis</span><em>SQL 매퍼, 다중 JOIN</em></li>
     <li><span class="chip">MySQL</span><em>DB 설계, ERD</em></li>
