@@ -17,3 +17,33 @@
 <meta name="theme-color" content="#ffffff"/>
 
 <!-- end custom head snippets -->
+{% include base_path %}
+
+<!-- start custom head snippets -->
+
+<!-- Support for Academicons -->
+<link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
+
+<!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
+<link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon-180x180.png"/>
+<link rel="icon" type="image/svg+xml" href="{{ base_path }}/images/favicon.svg"/>
+<link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-32x32.png" sizes="32x32"/>
+<link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-192x192.png" sizes="192x192"/>
+<link rel="manifest" href="{{ base_path }}/images/manifest.json"/>
+<link rel="icon" href="/images/favicon.ico"/>
+<link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
+
+<meta name="theme-color" content="#ffffff"/>
+
+<!-- 수정됨: GA4 스니펫 시작 -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-201TQKQYS7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-201TQKQYS7');
+</script>
+<!-- 수정됨: GA4 스니펫 끝 -->
+
+<!-- end custom head snippets -->
