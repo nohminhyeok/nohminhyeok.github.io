@@ -17,6 +17,8 @@ thumb: /images/final.png
   <p><strong>사이트</strong>:
     <a href="http://3.37.37.185/" target="_blank" rel="noopener">실행 주소</a>
   </p>
+  
+<div class="card"> <p><strong>테스트 계정</strong> (시연용 로그인 가능)</p> <ul> <li><strong>개인회원</strong> : <code>personal001 / 1234</code> <br></li> <li><strong>기업회원</strong> : <code>biz001 / Qwer1234!</code> <br></li> <li><strong>관리자</strong> : <code>admin001 / 1234</code> <br></li> </ul> </div>
 </section>
 
 ## 프로젝트 개요
