@@ -8,18 +8,6 @@ classes: wide
 
 <div class="portfolio-wrap">
 
-  <!-- 컨트롤 바 -->
-  <section class="pf-controls card" aria-label="필터와 정렬">
-    <div class="pf-row">
-      <input id="pf-search" class="pf-input" type="search" placeholder="검색: 제목/태그" aria-label="검색" />
-      <select id="pf-sort" class="pf-select" aria-label="정렬">
-        <option value="recent">최신순</option>
-        <option value="title">제목순</option>
-      </select>
-    </div>
-    <div class="pf-chips" id="pf-chips" aria-label="태그 필터"></div>
-  </section>
-
   <!-- 카드 그리드 -->
   <section class="pf-grid" id="pf-grid">
     {% assign posts = site.portfolio | sort: 'date' | reverse %}
@@ -62,12 +50,6 @@ classes: wide
       </article>
     {% endfor %}
   </section>
-
-  <!-- 하단 상태/초기화 -->
-  <footer class="pf-footer">
-    <div><strong id="pf-count"></strong> 개의 결과</div>
-    <button class="btn pf-clear" type="button" id="pf-clear">필터 초기화</button>
-  </footer>
 
 </div><!-- /.portfolio-wrap -->
 
